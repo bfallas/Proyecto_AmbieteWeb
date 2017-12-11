@@ -7,7 +7,7 @@ import Logo from './img/imagen.jpg'
 export default class extends Component {
   render() {
     const MainSty = { textAlign: "center", color: "white", height: "100vh" }
-    const PicSty ={ paddingTop: "5px", width: "100%", height: "300px"}
+    const PicSty ={ paddingTop: "5px", width: "700px", height: "300px"}
     return(
       <div style={MainSty}>
         <img style={PicSty} src={Logo} alt="miss pic"/>
