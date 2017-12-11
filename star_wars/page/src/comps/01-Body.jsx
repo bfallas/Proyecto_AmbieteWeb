@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-  // -------------------------
 import Categories from './02-Categories.jsx'
 import UniPage from './04-UniPage.jsx'
-import Logo from './img/one.jpg'
+import Logo from './img/imagen.jpg'
 
 export default class extends Component {
   render() {
-    const MainSty = { backgroundColor: "black", textAlign: "center", color: "white", height: "100vh" }
-    const PicSty ={ paddingTop: "25px" }
+    const MainSty = { textAlign: "center", color: "white", height: "100vh" }
+    const PicSty ={ paddingTop: "5px", width: "100%", height: "300px"}
     return(
       <div style={MainSty}>
         <img style={PicSty} src={Logo} alt="miss pic"/>

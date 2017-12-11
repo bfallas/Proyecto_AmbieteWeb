@@ -7,7 +7,7 @@ let myURL = "https://swapi.co/api/"
 export default class extends Component {
   state = { data: [], show: false, catego: "" }
 
-// ------------------------------------------------------------------------------
+
 
   myFun1 = async (sufix)=>{
     this.setState({ show: false })
@@ -20,7 +20,7 @@ export default class extends Component {
     myURL = "https://swapi.co/api/"
   }
 
-// ------------------------------------------------------------------------------
+
 
   exe1 = () => {
     return( <div>
@@ -35,20 +35,20 @@ export default class extends Component {
             </div> )
   }
 
-// ------------------------------------------------------------------------------
+
 
   render() {
-    const mainhere = { height: "100vh", backgroundColor: "black" }
-    const btnSty = { fontSize: "20px", height: "35px", width: "100px", margin: "3px", backgroundColor: "rgb(122, 230, 249)" }
+    const mainhere = { height: "100vh", backgroundColor: "trasparent" }
+    const btnSty = { fontSize: "20px", height: "35px", width: "100px", margin: "3px", backgroundColor: "#222222", border: "1px", color: "#FFF"}
     return(
       <div style={mainhere}>
 
         <button style={btnSty} onClick={() => this.myFun1("people/")} >People</button>
         <button style={btnSty} onClick={() => this.myFun1("planets/")} >Planets</button>
-        <button style={btnSty} onClick={() => this.myFun1("films/")} >films</button>
-        <button style={btnSty} onClick={() => this.myFun1("species/")} >species</button>
-        <button style={btnSty} onClick={() => this.myFun1("vehicles/")} >vehicles</button>
-        <button style={btnSty} onClick={() => this.myFun1("starships/")} >starships</button>
+        <button style={btnSty} onClick={() => this.myFun1("films/")} >Films</button>
+        <button style={btnSty} onClick={() => this.myFun1("species/")} >Species</button>
+        <button style={btnSty} onClick={() => this.myFun1("vehicles/")} >Vehicles</button>
+        <button style={btnSty} onClick={() => this.myFun1("starships/")} >Starships</button>
 
         <br/><br/>
 

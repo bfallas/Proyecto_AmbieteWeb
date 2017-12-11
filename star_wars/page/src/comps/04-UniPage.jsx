@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default class extends React.Component {
   state = { show: false, keys: [], data: {} }
 
-// ------------------------------------------------------------------------------
+
 
   exe1 = async ()=>{
     this.setState({ show: false })
@@ -20,7 +20,7 @@ export default class extends React.Component {
     await this.setState({ show: true })
   }
 
-// ------------------------------------------------------------------------------
+
 
   exe2 = ()=>{
     return( <div> {
@@ -30,10 +30,9 @@ export default class extends React.Component {
         } </div> )
   }
 
-// ------------------------------------------------------------------------------
 
   render() {
-    const dataSty = { fontSize: "20px", margin: "20px auto", display: "block", border: "2px solid aquamarine", padding: "15px", textAlign: "left", width: "75%", backgroundColor: "rgb(182, 162, 255)", color: "black" }
+    const dataSty = { fontSize: "20px", margin: "20px auto", display: "block", border: "2px solid trasparent", padding: "15px", textAlign: "left", width: "75%", backgroundColor: "#282727", color: "#FFF" }
     const bk2srch = { padding: "8px", border: "2px solid white", backgroundColor: "rgb(187, 251, 255)" }
     const hrstyle = { width: "75%" }
     const btn2lod = { padding: "4px", border: "2px solid white" }
